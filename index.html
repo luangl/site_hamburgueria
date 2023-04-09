@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lu Hamburgueria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-1">Lu Hamburgueria</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link"> 
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-intervel="1000">
+                        <img src="/images/slides/slide1.png" alt="Foto interno">
+                    </div>
+                    <div class="carousel-item" data-bs-intervel="1000">
+                        <img src="/images/slides/slide2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-intervel="1000">
+                        <img src="/images/slides/slide3.png" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto interno">
+                        </div>
+                        <div class="col-md-12 col-lg-7 mt-3 mt-md-3">
+                            <h2 class="section-title">Sobre  <span class="text-colored">a hamburgueria</span></h2>
+                            <p>
+                                Fundada em 2023, a Lu Hamburgueria atua com produtos de melhor qualidade e melhores chefes de cozinha, tudo isso para produzirmos os hamburgueres mais deliciosos que existe, além de contarmos com uma equipe muito eficiente e carismática, dando total atenção ao nossos clientes!
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                A Lu Hamburgueria conta com um espaçoso e aconchegante espaço, contamos com um espaço kids onde você pode deixar suas crianças brincando enquanto a refeição não chega, localizado no coração da cidade! Contamos com: 
+                            </p>
+                            <ul>
+                                <li>Os melhores chefes</li>
+                                <li>Produtos da melhor qualidade</li>
+                                <li>Espaço kids no nosso espaço</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasioes</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/rodizio.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-bookmark-heart-fill"></i>
+                            Rodízio 
+                        </h3>
+                        <p>
+                            A Lu Hamburgueria conta com um sistema de rodízio, onde o preço é contado por pessoa e você pode comer os itens do nosso cardápio a vontade! Os hamburgueres são menores que o normal para que sua experiência seja a melhor possivel!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversarios
+                        </h3>
+                        <p>
+                            A Lu Hamburgueria também se faz presente em festas de aniversários, contrate a gente para cuidar da parte alimentícia da sua festa de aniversário! Vamos para o local e fazemos os hamburgueres conforme emcomenda.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações</h3>
+                        <p>
+                            A Lu Hamburgueria não participa só de festas de aniversário como em festas em geral, contrate a gente para que sua festa tenha uma comida deliciosa! Independente do local estaremos muito felizes de ajudar sua festa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-12 col-lg-2 mb-md-3">
+                        <nav class="nav nav-pills flex-column nav-cardapio mx-auto">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoolicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#porcoes" class="fw-bold text-start nav-link text-colored">Porções</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Hamburgueres</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-15 col-lg-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Refrigerante Coca-Cola Lata
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/fantauva.jpg" alt="Fanta-Uva">
+                                        <h5 class="text-colored fw-bold mt-2">Fanta Uva</h5>
+                                        <p>
+                                            Refrigerante Fanta Uva Lata
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/guarana.png" alt="Guarana">
+                                        <h5 class="text-colored fw-bold mt-2">Guaraná Antarctica</h5>
+                                        <p>
+                                            Refrigerante Guaraná Antarctica Lata
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/energetico.jpg" alt="Energetico">
+                                        <h5 class="text-colored fw-bold mt-2">Energético</h5>
+                                        <p>
+                                            Energético Monster (Vários sabores)
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/agua.jpg" alt="Agua">
+                                        <h5 class="text-colored fw-bold mt-2">Água com ou sem gás</h5>
+                                        <p>
+                                            Garrafinha de água com ou sem gás
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Suco Natural</h5>
+                                        <p>
+                                            Suco natural (Disponível varios sabores)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Cerveja">
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                            Cerveja Lata
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Vinho (De sua pedida)
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/chopp.jpg" alt="Chopp">
+                                        <h5 class="text-colored fw-bold mt-2">Chopp</h5>
+                                        <p>
+                                            Chopp artesanal
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/caipirinha.jpg" alt="Caipirinha">
+                                        <h5 class="text-colored fw-bold mt-2">Caipirinha</h5>
+                                        <p>
+                                            Caipirinha em que você escolhe os condimentos
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/espumante.jpg" alt="Espumantes">
+                                        <h5 class="text-colored fw-bold mt-2">Espumantes</h5>
+                                        <p>
+                                            Espumantes garrafa
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="porcoes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/batatafrita.jpg" alt="Porção-batata">
+                                        <h5 class="text-colored fw-bold mt-2">Porção de batata frita</h5>
+                                        <p>
+                                            Porção de batata frita 300g
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/onion.jpg" alt="Porção-onion ">
+                                        <h5 class="text-colored fw-bold mt-2">Porção de onion rings</h5>
+                                        <p>
+                                            Porção de onion rings 300g
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/rustica.jpg" alt="Porção-rustica">
+                                        <h5 class="text-colored fw-bold mt-2">Porção de batata rústica</h5>
+                                        <p>
+                                            Porção de batata rústica 300g
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/smile.jpg" alt="Porção-smile">
+                                        <h5 class="text-colored fw-bold mt-2">Porção de batata smile</h5>
+                                        <p>
+                                            Porção de batata smile 300g
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/chesse.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Chesseburguer</h5>
+                                        <p>
+                                            Chesseburguer com 1 Hambuguer, maionese, mussarela, cheddar, molho barbecue, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/kids.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Kids</h5>
+                                        <p>
+                                            Hamburguer, ketchup, mussarela e bacon, acompanha batata smile.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/caramelizada.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Cebola Caramelizada</h5>
+                                        <p>
+                                            Hamburguer, bacon, maionese, cebola caramelizada, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/dois.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Duplo Burguer</h5>
+                                        <p>
+                                            Dois Hamburgueres, duplo bacon, duplo mussarela, cheddar, maionese, barbecue, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/cordeiro.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Cordeiro</h5>
+                                        <p>
+                                            Duplo Hamburguer de cordeiro, maionese, picles, bacon, barbecue, cheddar, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/italiano.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Italiano</h5>
+                                        <p>
+                                            Hamburguer, mostarda e mel, salame italiano, mussarela, tomate seco, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/brazilian.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Brazilian</h5>
+                                        <p>
+                                            Hamburguer, mostarda e mel, calabresa, cebola caramelizada, picles, cebola roxa e cheddar, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/quinoa.jpg" alt="chesseburguer">
+                                        <h5 class="text-colored fw-bold mt-2">Vegetariano</h5>
+                                        <p>
+                                            Pão integral 7 grãos, requeijão de inhame, palmito, hamburguer de quinoa 130g, rúcula e tomate seco, acompanha batata frita.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/mini.jpg" alt="mini-churros">
+                                        <h5 class="text-colored fw-bold mt-2">Porção mini-churros</h5>
+                                        <p>
+                                            Porção de mini churros doce de leite
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/crepres.jpg" alt="crepesuiço">
+                                        <h5 class="text-colored fw-bold mt-2">Crepes Suiço</h5>
+                                        <p>
+                                            Crepe Doce do tipo Suiço (Vários sabores disponiveis)
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/crepef.jpg" alt="crepefrances">
+                                        <h5 class="text-colored fw-bold mt-2">Crepes Francês</h5>
+                                        <p>
+                                            Crepe Doce do tipo Françes (Vários sabores disponiveis)
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/donut.jpg" alt="donut">
+                                        <h5 class="text-colored fw-bold mt-2">Donuts de Nutella</h5>
+                                        <p>
+                                            Recheio de Nutella e uma massa aerada e coberta de açucar.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/milk.jpg" alt="milkshake">
+                                        <h5 class="text-colored fw-bold mt-2">Milk-shake</h5>
+                                        <p>
+                                            Milk Shake 400ml (Vários sabores disponiveis)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="none" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                                <input type="email" id="none" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-3 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-3 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p>
+                                Rua HTML BootStrap JavaScript nº10, Bairro Centro, Curitiba-PR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000');
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
